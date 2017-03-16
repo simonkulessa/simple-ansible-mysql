@@ -1,0 +1,5 @@
+---
+
+- name: install mysql database server
+  apt: pkg={{ mysql_packages }} state=installed
+  register: mysql

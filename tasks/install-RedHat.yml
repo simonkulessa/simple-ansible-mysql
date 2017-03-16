@@ -1,0 +1,8 @@
+---
+
+- name: install mysql database server
+  yum: pkg={{ mysql_packages }} state=installed update_cache=yes
+  register: mysql
+
+- name: start mysql server
+  service: name={{ mysql_service }} state=started enabled=yes

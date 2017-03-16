@@ -1,0 +1,24 @@
+### MySQL related vars
+
+mysql_service: mysql
+
+mysql_packages:
+  - mysql-server
+  - mysql-client
+  - python-mysqldb
+
+mysql_root: root
+mysql_root_password: SomeSecurePass
+mysql_host: localhost
+
+mysql_user_configuration:
+  - user: dbuser01
+    database: database01
+    password: SecurePass
+    collation: utf8_bin
+    charset: utf8
+  - user: dbuser02
+    database: database02
+    password: SecurePass
+    collation: utf8_bin
+    charset: utf8
